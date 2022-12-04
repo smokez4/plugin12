@@ -23,21 +23,10 @@ public:
     void LoadHooks();
     void GameEndedEvent(std::string name);
     void Hit(std::string name);
-    void hit1(std::string name);
-    void hit2(std::string name);
-    void hit3(std::string name);
-    void hit4(std::string name);
     void Reset();
-    bool hookschecks();
-    void SecondPassedEvent(std::string name);
-    void Shoot();
-    void BallTp();
     void TestShot();
     bool IsValid();
-    bool Dodgevalid();
-    void SecondPassed();
     void Toggle();
-    void Shotreset();
     void OnEnabledChanged();
    
 

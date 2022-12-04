@@ -45,16 +45,14 @@ void plugin12::OnEnabledChanged() {
 	if (enabled == 0) {
 
 		Reset();
+
 	}
 	else {
 
-		
 		if (*dodgemode) { this->Dodge(); }
 		else { this->LoadHooks(); }
 
 	}
-
-
 }
 
 void plugin12::Toggle() {
@@ -70,15 +68,12 @@ void plugin12::Toggle() {
 
 		cvarManager->executeCommand("plugin_enable 1");
 
-
 	}
-
-
 }
 
 bool::plugin12::IsValid() {
-	if (!*enabled) { return false; }
 
+	if (!*enabled) { return false; }
 
 }
 void plugin12::TestShot() {
@@ -89,9 +84,7 @@ void plugin12::TestShot() {
 	float velo_z = { cvarManager->getCvar("velo_z").getFloatValue() };
 	float addedspin = { cvarManager->getCvar("velo_addedspin").getFloatValue() };
 
-
 	if (*addspin) {
-
 
 		ball.SetAngularVelocity(addedspin, false);
 
@@ -106,12 +99,8 @@ void plugin12::TestShot() {
 		Vector ballspeed = Vector(velo_x * 27.7777778, velo_z * 27.7777778, velo_y * 27.7777778);
 
 		ball.SetVelocity(ballspeed);
-
 	}
-
 }
-	
-
 
 
 void plugin12::Reset() {
@@ -150,7 +139,6 @@ void plugin12::GameEndedEvent(std::string name)
 	
 	if (*addspin) {
 
-
 		ball.SetAngularVelocity(addedspin, false);
 
 	}
@@ -164,13 +152,11 @@ void plugin12::GameEndedEvent(std::string name)
 		Vector ballspeed = Vector(velo_x * 27.7777778, velo_z * 27.7777778, velo_y * 27.7777778);
 
 		ball.SetVelocity(ballspeed);
-
 	}
 
 
 
 	if (*reseta) {
-
 
 		cvarManager->executeCommand("sleep 50; plugin_enable 0");
 
