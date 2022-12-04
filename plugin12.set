@@ -1,0 +1,17 @@
+read!
+1|Enable |plugin_enable
+9|bind plugin_toggle in order to quickly enable and disable!
+1|Require Dodge |plugin_dodgemode
+9|Make the plugin require a dodge before a ball touch to activate.
+1|Auto Toggle |plugin_autotoggle
+9|Automatically disables the plugin after it activates.
+1|Use UU/s Instead of km/h |plugin_uom
+9|1 km/h is equal to 27.7777778 UU/s.
+12|Velo_X |velo_x
+12|Velo_Y |velo_y
+12|Velo_Z |velo_z
+9| Range is -216 ~ 216 km/h or -6000 ~ 6000 UU/s.
+1|Change Angular Velocity. |plugin_addspin
+12|Velo_Angular |velo_addedspin
+9| Range is -6.0 ~ 6.0 rad/s.
+0|TestShot |plugin_testshot
