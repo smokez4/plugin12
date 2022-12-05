@@ -78,7 +78,9 @@ bool::plugin12::IsValid() {
 }
 void plugin12::TestShot() {
 	ServerWrapper server = gameWrapper->GetGameEventAsServer();
+	if (!server) { return; };
 	BallWrapper ball = server.GetBall();
+	if (ball.IsNull()) { return; };
 	float velo_x = { cvarManager->getCvar("velo_x").getFloatValue() };
 	float velo_y = { cvarManager->getCvar("velo_y").getFloatValue() };
 	float velo_z = { cvarManager->getCvar("velo_z").getFloatValue() };
@@ -130,7 +132,9 @@ void plugin12::GameEndedEvent(std::string name)
 
 	if (!IsValid()) { return; }
 	ServerWrapper server = gameWrapper->GetGameEventAsServer();
+	if (!server) { return; };
 	BallWrapper ball = server.GetBall();
+	if (ball.IsNull()) { return; };
 	float velo_x = { cvarManager->getCvar("velo_x").getFloatValue() };
 	float velo_y = { cvarManager->getCvar("velo_y").getFloatValue() };
 	float velo_z = { cvarManager->getCvar("velo_z").getFloatValue() };
