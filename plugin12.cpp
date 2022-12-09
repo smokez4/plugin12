@@ -1,10 +1,5 @@
 #include "pch.h"
 #include "plugin12.h"
-#include "bakkesmod\wrappers\ArrayWrapper.h"
-#include "bakkesmod\wrappers\GameEvent\TutorialWrapper.h"
-#include "bakkesmod\wrappers\GameObject\CarWrapper.h"
-#include "bakkesmod\wrappers\GameObject\BallWrapper.h"
-#include "bakkesmod\wrappers\GameObject\CarComponent\DodgeComponentWrapper.h"
 #include <vector>
 BAKKESMOD_PLUGIN(plugin12, "pinch plugin", plugin_version, PERMISSION_OFFLINE)
 
